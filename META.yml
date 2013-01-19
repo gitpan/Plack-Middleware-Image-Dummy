@@ -5,6 +5,8 @@ author:
 build_requires: {}
 configure_requires:
   Module::Build: 0.38
+  Pod::Readme: 0
+  Pod::Select: 0
 dynamic_config: 1
 generated_by: 'Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921'
 license: perl
@@ -19,7 +21,7 @@ no_index:
 provides:
   Plack::Middleware::Image::Dummy:
     file: lib/Plack/Middleware/Image/Dummy.pm
-    version: 0.01
+    version: 0.02
 requires:
   Imager: 0.94
   Imager::File::GIF: 0.86
@@ -29,4 +31,4 @@ requires:
   perl: 5.008005
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.01
+version: 0.02

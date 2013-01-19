@@ -22,7 +22,9 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.38"
+            "Module::Build" : "0.38",
+            "Pod::Readme" : "0",
+            "Pod::Select" : "0"
          }
       },
       "runtime" : {
@@ -39,7 +41,7 @@
    "provides" : {
       "Plack::Middleware::Image::Dummy" : {
          "file" : "lib/Plack/Middleware/Image/Dummy.pm",
-         "version" : "0.01"
+         "version" : "0.02"
       }
    },
    "release_status" : "stable",
@@ -48,5 +50,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
