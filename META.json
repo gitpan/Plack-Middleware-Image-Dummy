@@ -1,0 +1,52 @@
+{
+   "abstract" : "Dummy image responser for Plack",
+   "author" : [
+      "Tasuku SUENAGA a.k.a. gunyarakun <tasuku-s-cpanATATtitech.ac>"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Plack-Middleware-Image-Dummy",
+   "no_index" : {
+      "directory" : [
+         "inc",
+         "author"
+      ]
+   },
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.38"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Imager" : "0.94",
+            "Imager::File::GIF" : "0.86",
+            "Plack::Builder" : "0",
+            "Plack::Middleware::Static" : "0",
+            "parent" : "0",
+            "perl" : "5.008005"
+         }
+      }
+   },
+   "provides" : {
+      "Plack::Middleware::Image::Dummy" : {
+         "file" : "lib/Plack/Middleware/Image/Dummy.pm",
+         "version" : "0.01"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ]
+   },
+   "version" : "0.01"
+}
