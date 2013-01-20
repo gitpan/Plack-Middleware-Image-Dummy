@@ -3,7 +3,7 @@ package Plack::Middleware::Image::Dummy;
 use strict;
 use warnings;
 use 5.008005;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use parent qw/Plack::Middleware/;
 
@@ -194,7 +194,7 @@ sub return_error {
 sub parse_color {
     my ($color_str) = @_;
 
-    if ($color_str =~ /#([0-9a-fA-F]{6})/) {
+    if ($color_str =~ /^([0-9a-fA-F]{6})$/) {
         my $rgb = hex($1);
         my $b   = $rgb & 0xff; $rgb >>= 8;
         my $g   = $rgb & 0xff; $rgb >>= 8;
@@ -273,11 +273,11 @@ You can specify text written in the center of the image. Default is #{width}x#{h
 
 =head2 color
 
-You can specify text color.
+You can specify text color with 'RRGGBB'. ex.) ff0000 is red.
 
 =head2 bgcolor
 
-You can specify background color.
+You can specify background color with 'RRGGBB'. ex.) 00ff00 is green.
 
 =head2 minsize
 
@@ -301,7 +301,7 @@ L<Imager::File::GIF>
 
 =head1 LICENSE
 
-Files in 'font' directory are licenced under the Apache Licence 2.0.
+Files in 'font' directory are licensed under the Apache License 2.0.
 
 Copyright (C) Tasuku SUENAGA a.k.a. gunyarakun
 
