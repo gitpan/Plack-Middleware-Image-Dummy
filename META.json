@@ -38,6 +38,8 @@
          "requires" : {
             "Imager" : "0.94",
             "Imager::File::GIF" : "0.86",
+            "Imager::File::JPEG" : "0.85",
+            "Imager::File::PNG" : "0.86",
             "Plack::Builder" : "0",
             "Plack::Middleware::Static" : "0",
             "parent" : "0",
@@ -48,7 +50,7 @@
    "provides" : {
       "Plack::Middleware::Image::Dummy" : {
          "file" : "lib/Plack/Middleware/Image/Dummy.pm",
-         "version" : "0.03"
+         "version" : "0.04"
       }
    },
    "release_status" : "stable",
@@ -57,5 +59,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.03"
+   "version" : "0.04"
 }
