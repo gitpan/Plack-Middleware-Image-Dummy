@@ -11,6 +11,10 @@ SYNOPSIS
             # map path with regex
             enable 'Image::Dummy', map_path => qr/^\//, font_path => './font/MTLmr3m.ttf';
 
+            # change max_width and max_height
+            enable 'Image::Dummy', map_path => '/', font_path => './font/MTLmr3m.ttf',
+              max_width => 100, max_height => 200;
+
             # with param_filter
             enable 'Image::Dummy', map_path => '/', font_path => './font/MTLmr3m.ttf', param_filter => sub {
                 my $params = shift;
@@ -36,6 +40,12 @@ CONFIGURATION
 
   font_path
     Font path.
+
+  max_width
+    Max width of image. Default is 2048.
+
+  max_height
+    Max height of image. Default is 2048.
 
   param_filter
     A code reference. The code called with one HashRef contains parsed

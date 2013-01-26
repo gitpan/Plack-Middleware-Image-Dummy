@@ -23,15 +23,14 @@
       "build" : {
          "requires" : {
             "Plack::Test" : "0",
+            "Test::Exception" : "0",
             "Test::More" : "0.98",
             "Test::Requires" : "0"
          }
       },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.38",
-            "Pod::Readme" : "0",
-            "Pod::Select" : "0"
+            "Module::Build" : "0.38"
          }
       },
       "runtime" : {
@@ -50,7 +49,7 @@
    "provides" : {
       "Plack::Middleware::Image::Dummy" : {
          "file" : "lib/Plack/Middleware/Image/Dummy.pm",
-         "version" : "0.04"
+         "version" : "0.05"
       }
    },
    "release_status" : "stable",
@@ -59,5 +58,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.04"
+   "version" : "0.05"
 }
